@@ -9,7 +9,8 @@ class renderer():
         self.playerChar = '■'
         self.walkableChar = '□'
         # TODO Add collisions
-        self.collideChar = '[]'
+        self.collideChar1 = '['
+        self.collideChar2 = ']'
 
     def render(self):
         system('cls')
@@ -54,21 +55,21 @@ class renderer():
     # * ANCHOR Returns the grid in which the game is played
     # TODO Make easier to edit
     def getBackground(self):
-        return [[self.collideChar, self.collideChar, self.collideChar, self.collideChar, self.collideChar, self.collideChar, self.collideChar, self.collideChar, self.collideChar, self.collideChar, self.collideChar, self.collideChar],
-                [self.collideChar, '□', '□', '□', '□', '□',
+        return [[self.collideChar1, self.collideChar2, self.collideChar1, self.collideChar2, self.collideChar1, self.collideChar2, self.collideChar1, self.collideChar2, self.collideChar1, self.collideChar2, self.collideChar1, self.collideChar2, self.collideChar1, self.collideChar2, self.collideChar1, self.collideChar2, self.collideChar1, self.collideChar2, self.collideChar1, self.collideChar2, self.collideChar1, self.collideChar2, self.collideChar1, self.collideChar2],
+                [self.collideChar1, self.collideChar2, '□', '□', '□', '□', '□',
                     '□', '□', '□', '□', '□', '□', '□', '□', '□', '□',
-                    '□', '□', '□', '□', '□', self.collideChar],
-                [self.collideChar, '□', '□', '□', '□', '□',
+                    '□', '□', '□', '□', '□', self.collideChar1, self.collideChar2],
+                [self.collideChar1, self.collideChar2, '□', '□', '□', '□', '□',
                     '□', '□', '□', '□', '□', '□', '□', '□', '□', '□',
-                    '□', '□', '□', '□', '□', self.collideChar],
-                [self.collideChar, '□', '□', '□', '□', '□',
+                    '□', '□', '□', '□', '□', self.collideChar1, self.collideChar2],
+                [self.collideChar1, self.collideChar2, '□', '□', '□', '□', '□',
                     '□', '□', '□', '□', '□', '□', '□', '□', '□', '□',
-                    '□', '□', '□', '□', '□', self.collideChar],
-                [self.collideChar, '□', '□', '□', '□', '□',
+                    '□', '□', '□', '□', '□', self.collideChar1, self.collideChar2],
+                [self.collideChar1, self.collideChar2, '□', '□', '□', '□', '□',
                     '□', '□', '□', '□', '□', '□', '□', '□', '□', '□',
-                    '□', '□', '□', '□', '□', self.collideChar],
-                [self.collideChar, '□', '□', '□', '□', '□',
+                    '□', '□', '□', '□', '□', self.collideChar1, self.collideChar2],
+                [self.collideChar1, self.collideChar2, '□', '□', '□', '□', '□',
                     '□', '□', '□', '□', '□', '□', '□', '□', '□', '□',
-                    '□', '□', '□', '□', '□', self.collideChar],
-                [self.collideChar, self.collideChar, self.collideChar, self.collideChar, self.collideChar, self.collideChar, self.collideChar, self.collideChar, self.collideChar, self.collideChar, self.collideChar, self.collideChar]]
+                    '□', '□', '□', '□', '□', self.collideChar1, self.collideChar2],
+                [self.collideChar1, self.collideChar2, self.collideChar1, self.collideChar2, self.collideChar1, self.collideChar2, self.collideChar1, self.collideChar2, self.collideChar1, self.collideChar2, self.collideChar1, self.collideChar2, self.collideChar1, self.collideChar2, self.collideChar1, self.collideChar2, self.collideChar1, self.collideChar2, self.collideChar1, self.collideChar2, self.collideChar1, self.collideChar2, self.collideChar1, self.collideChar2]]
     # !SECTION

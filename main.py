@@ -4,7 +4,7 @@ from PlayerScripts.playerMovement import playerUp, playerDown, playerRight, play
 from time import sleep
 
 renderer = renderer()
-renderer.setPlayerPos(1, 1)
+renderer.setPlayerPos(2, 1)
 renderer.render()
 
 
