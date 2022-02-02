@@ -1,4 +1,4 @@
-from os import system
+from os import system, chdir
 
 
 class renderer():
@@ -18,7 +18,7 @@ class renderer():
             print(self.placePlayerPosition(
                 self.playerX, self.playerY, self.playerChar))
         else:
-            pass
+            print(self.getBackground())
 
     # SECTION Set statements
     def setPlayerPos(self, x, y):
@@ -55,21 +55,10 @@ class renderer():
     # * ANCHOR Returns the grid in which the game is played
     # TODO Make easier to edit
     def getBackground(self):
-        return [[self.collideChar1, self.collideChar2, self.collideChar1, self.collideChar2, self.collideChar1, self.collideChar2, self.collideChar1, self.collideChar2, self.collideChar1, self.collideChar2, self.collideChar1, self.collideChar2, self.collideChar1, self.collideChar2, self.collideChar1, self.collideChar2, self.collideChar1, self.collideChar2, self.collideChar1, self.collideChar2, self.collideChar1, self.collideChar2, self.collideChar1, self.collideChar2],
-                [self.collideChar1, self.collideChar2, '□', '□', '□', '□', '□',
-                    '□', '□', '□', '□', '□', '□', '□', '□', '□', '□',
-                    '□', '□', '□', '□', '□', self.collideChar1, self.collideChar2],
-                [self.collideChar1, self.collideChar2, '□', '□', '□', '□', '□',
-                    '□', '□', '□', '□', '□', '□', '□', '□', '□', '□',
-                    '□', '□', '□', '□', '□', self.collideChar1, self.collideChar2],
-                [self.collideChar1, self.collideChar2, '□', '□', '□', '□', '□',
-                    '□', '□', '□', '□', '□', '□', '□', '□', '□', '□',
-                    '□', '□', '□', '□', '□', self.collideChar1, self.collideChar2],
-                [self.collideChar1, self.collideChar2, '□', '□', '□', '□', '□',
-                    '□', '□', '□', '□', '□', '□', '□', '□', '□', '□',
-                    '□', '□', '□', '□', '□', self.collideChar1, self.collideChar2],
-                [self.collideChar1, self.collideChar2, '□', '□', '□', '□', '□',
-                    '□', '□', '□', '□', '□', '□', '□', '□', '□', '□',
-                    '□', '□', '□', '□', '□', self.collideChar1, self.collideChar2],
-                [self.collideChar1, self.collideChar2, self.collideChar1, self.collideChar2, self.collideChar1, self.collideChar2, self.collideChar1, self.collideChar2, self.collideChar1, self.collideChar2, self.collideChar1, self.collideChar2, self.collideChar1, self.collideChar2, self.collideChar1, self.collideChar2, self.collideChar1, self.collideChar2, self.collideChar1, self.collideChar2, self.collideChar1, self.collideChar2, self.collideChar1, self.collideChar2]]
+        mapDir = "Maps\map.txt"
+        chdir("")
+        file = open("Maps\map.txt", 'r')
+        lines = file.readlines()
+        print(lines)
+        file.close()
     # !SECTION
